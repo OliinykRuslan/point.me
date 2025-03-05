@@ -48,20 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
             smoothScroll(target);
         });
     });
-    // 
 
     // price checkbox
     const checkbox = document.getElementById("switch");
     const priceElement = document.querySelector(".plan-main");
     const descElement = document.querySelector(".plan-price-wrap .desc");
+    const btn = document.querySelector(".card-ribbon .btn.btn-primary");
 
     checkbox.addEventListener("change", function () {
         if (checkbox.checked) {
             priceElement.textContent = "ONLY $10.75";
             descElement.style.display = "block";
+            btn.href = "https://www.point.me/signup/standard"; // Annual
         } else {
             priceElement.textContent = "$12";
             descElement.style.display = "none";
+            btn.href = "https://www.point.me/signup/monthly"; // Monthly
         }
     });
 

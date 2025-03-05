@@ -455,6 +455,7 @@ ul.check-list li {
     font-size: 20px;
     width: 100%;
     padding: .5rem;
+    cursor: auto;
 }
 .card-img {
     border-radius: 4px;
@@ -782,6 +783,7 @@ ul.check-list li {
 }
 .tab-content-item {
     display: none;
+    max-width: 100%;
 }
 .tab-content-item.is-active {
     display: block;
@@ -1516,6 +1518,8 @@ ul.check-list li {
     }
     .tabs-label {
         font-size: 11px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .tab-section .tab-content {
         padding-top: 20px;
