@@ -44,8 +44,8 @@
     --primary-backdrop: #f1f1ff;
     --light-green: #95F3D1;
     --a-link: #7257ea;
-    --garnett-medium: 'garnett medium', 'helvetica', sans-serif;
-    --garnett-semibold: 'garnett semibold', 'helvetica', sans-serif;
+    --garnett-medium: 'garnett medium', 'helvetica', Arial, sans-serif;
+    --garnett-semibold: 'garnett semibold', 'helvetica', Arial, sans-serif;
 }
 iframe, object, embed {
     border: none;
@@ -72,7 +72,7 @@ body {
     padding: 0;
     margin: 0;
     word-wrap: break-word;
-    font-family: 'adelle', 'helvetica', sans-serif;
+    font-family: 'adelle', 'helvetica', Arial, sans-serif;
     padding-top: 100px;
 }
 a {
@@ -111,7 +111,7 @@ h6 {
     margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'garnett medium', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
 }
 .purple-text {
     color: var(--primary-700);
@@ -142,7 +142,7 @@ a {
     transition: all .25s ease-in-out;
 }
 .btn {
-    font-family: 'garnett medium', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
     font-size: 15px;
     color: var(--white);
     font-weight: 600;
@@ -201,7 +201,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: #000;
-    font-family: 'garnett semibold', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
     font-size: 15px;
 }
 .site-header a:hover {
@@ -408,12 +408,12 @@ ul.check-list li {
     max-width: 580px;
 }
 .hero-text-wrap .btn {
-    font-family: 'garnett medium', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
     width: 100%;
     max-width: 174px;
 }
 .img-title {
-    font-family: 'garnett medium';
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
     font-size: 20px;
     text-align: center;
     max-width: 320px;
@@ -449,7 +449,7 @@ ul.check-list li {
     font-weight: 600;
 }
 .hero .card-item .btn {
-    font-family: 'adelle', 'helvetica', sans-serif;
+    font-family: 'adelle', 'helvetica', Arial, sans-serif;
     grid-column: span 2 / span 2;
     line-height: 1;
     font-size: 20px;
@@ -545,7 +545,7 @@ ul.check-list li {
     max-width: 424px;
 }
 .pricing-ribbon {
-    font-family: 'adelle', 'helvetica', sans-serif;
+    font-family: 'adelle', 'helvetica', Arial, sans-serif;
     font-weight: 600;
     font-size: 15px;
     text-align: center;
@@ -563,7 +563,7 @@ ul.check-list li {
     margin: 0 0 20px;
 }
 .pricing-heading span {
-    font-family: 'adelle', 'helvetica', sans-serif;
+    font-family: 'adelle', 'helvetica', Arial, sans-serif;
 }
 .pricing-subheading {
     margin: 0 0 14px;
@@ -642,7 +642,7 @@ ul.check-list li {
     font-size: 15px;
 }
 .plan-main {
-    font-family: 'garnett semibold', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
     font-size: 25px;
     color: #000;
     padding-right: 8px;
@@ -653,7 +653,7 @@ ul.check-list li {
 .more-option-title {
     display: none;
     font-size: 20px;
-    font-family: 'garnett medium', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
     line-height: 1;
     margin: 0 auto;
     width: 100%;
@@ -707,7 +707,7 @@ ul.check-list li {
     justify-content: center;
 }
 .card-item-title {
-    font-family: 'garnett semibold';
+    font-family: 'garnett semibold', 'helvetica', Arial, sans-serif;
     font-size: 18px;
 }
 .card-item-subtitle {
@@ -783,7 +783,6 @@ ul.check-list li {
 }
 .tab-content-item {
     display: none;
-    max-width: 100%;
 }
 .tab-content-item.is-active {
     display: block;
@@ -801,7 +800,7 @@ ul.check-list li {
 .tab-section .btn {
     background-color: var(--primary-saturated);
     border-radius: 3.75px;
-    font-family: 'garnett semibold', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
     font-size: 15px;
     color: #fff;
     padding: 9px 18px;
@@ -833,6 +832,7 @@ ul.check-list li {
     background-color: #fff;
     border: 1px solid #d1d5db;
     border-radius: 10px;
+    max-width: 100%;
     min-height: 128px;
 }
 .tab-item-logo img {
@@ -999,7 +999,7 @@ ul.check-list li {
 }
 .gift-section .text-holder p {
     font-size: 24px;
-    font-family: 'garnett medium', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
 }
 .gift-section .btn-holder {
     margin: 25px 0 0;
@@ -1007,7 +1007,7 @@ ul.check-list li {
 .gift-section .btn {
     padding: 12px 42px;
     background-color: var(--primary-saturated);
-    font-family: 'garnett medium', 'helvetica', sans-serif;
+    font-family: 'garnett medium', 'helvetica', Arial, sans-serif;
 }
 .gift-section .btn:hover {
     background-color: var(--primary-saturated-hover);
@@ -1517,7 +1517,7 @@ ul.check-list li {
         max-width: 130px;
     }
     .tabs-label {
-        font-size: 11px;
+        font-size: 12px;
         padding-right: 10px;
         padding-left: 10px;
     }
