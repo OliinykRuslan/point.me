@@ -24,6 +24,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // getting header height
+    function getHeaderHeight() {
+        const header = document.querySelector("header");
+        return header ? header.offsetHeight : 0;
+    }
+
+    // smooth scroll
+    function smoothScroll(targetSelector) {
+        const targetSection = document.querySelector(targetSelector);
+        if (!targetSection) return;
+        
+        const headerHeight = getHeaderHeight();
+        const sectionTop = targetSection.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: sectionTop - headerHeight, behavior: "smooth" });
+    }
+
+    // configuring scroll buttons
+    document.querySelectorAll("[data-scroll]").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            const target = this.getAttribute("data-scroll");
+            smoothScroll(target);
+        });
+    });
+    // 
+
     // price checkbox
     const checkbox = document.getElementById("switch");
     const priceElement = document.querySelector(".plan-main");
@@ -37,6 +63,36 @@ document.addEventListener("DOMContentLoaded", function () {
             priceElement.textContent = "$12";
             descElement.style.display = "none";
         }
+    });
+
+    //tab section
+    const tabs = document.querySelectorAll(".tabs-label");
+    const tabContents = document.querySelectorAll(".tab-content-item");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function (event) {
+            event.preventDefault();
+            const index = this.getAttribute("data-index");
+
+            tabs.forEach(t => {
+                t.classList.remove("tab-active");
+                t.setAttribute("aria-selected", "false");
+                t.setAttribute("aria-expanded", "false");
+            });
+
+            tabContents.forEach(content => {
+                content.classList.remove("is-active");
+            });
+
+            this.classList.add("tab-active");
+            this.setAttribute("aria-selected", "true");
+            this.setAttribute("aria-expanded", "true");
+
+            const activeContent = document.querySelector(`.tab-content-item[data-index="${index}"]`);
+            if (activeContent) {
+                activeContent.classList.add("is-active");
+            }
+        });
     });
 
 });
