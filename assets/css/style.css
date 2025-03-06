@@ -832,6 +832,7 @@ ul.check-list li {
     background-color: #fff;
     border: 1px solid #d1d5db;
     border-radius: 10px;
+    width: 100%;
     max-width: 100%;
     min-height: 128px;
 }
@@ -1678,8 +1679,10 @@ ul.check-list li {
         max-width: 200px;
     }
     .img-tab-wrap {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
+        /* grid-template-rows: repeat(6, 1fr); */
+        display: flex;
+        flex-wrap: wrap;
     }
     .stories-section .trustpilot-widget iframe {
         height: 85px !important;
